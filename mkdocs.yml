@@ -37,7 +37,7 @@ markdown_extensions:
   - tables
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - admonition
   - pymdownx.details
@@ -56,6 +56,13 @@ markdown_extensions:
 extra_css:
   - _inc/css/custom.css
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Portugues Brasileiro
+      link: /pt-BR/
+      lang: pt-BR
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/JustEnoughLinuxOS/distribution
@@ -93,7 +100,6 @@ nav:
       - Networking: configure/networking.md
       - Cloud Sync: configure/cloud-sync.md
       - VPN: configure/vpn.md
-      - Packages: configure/packages.md
     - Systems:
       #- systems/index.md
       - Arcade:
