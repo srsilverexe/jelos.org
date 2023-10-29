@@ -7,36 +7,33 @@ JELOS é instalado baixando a imagem para o seu dispositivo, gravando-o em um ca
 [![Latest](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=111111&color=5998FF&label=Latest&style=flat#only-light)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)[![Latest](https://img.shields.io/github/release/JustEnoughLinuxOS/distribution.svg?labelColor=dddddd&color=5998FF&label=Latest&style=flat#only-dark)](https://github.com/JustEnoughLinuxOS/distribution/releases/latest)
 
 * Baixe a ultima versão do JELOS para o seu dispositivo, esse download pode ser encontrado na [pagina de lançamentos](https://github.com/JustEnoughLinuxOS/distribution/releases/latest).
+    * Você vai encontrar o link de download para cada dispositivo/plataforma que suportamos na divisão: "Installation Package Downloads".
+    * Tenha certeza que de baixar a imagem correta para o seu dispositivo. Por exemplo, se você estiver instalando o JELOS em um [Loki Zero](../devices/ayn/loki-zero.md) você deve baixar a imagem `JELOS-AMD64`. 
+    * Se você qualquer dúvida, você pode verificar os [Dispositivos suportados](../devices/index.md), para confirmar qual imagem você deve baixar para seu dispositivo. 
 
+## Segundo passo: Gravação
 
+* Primeiro descomprima a imagem.
+* Grave a imagem em um cartão SD utilizando uma ferramenta de gravação.
+    * As ferramentas de gravação mais comuns incluem o [Balena Etcher](https://www.balena.io/etcher/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/) e o [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/). Se você já tiver experiencia com linha de comando, `dd` também pode ser uma boa opção.
 
-    * You'll find download links for each device/platform we support under the "`Installation Package Downloads`" header.
-    * Make sure to download the correct image for your device.  For example; if you are installing JELOS on a [Loki Zero](../devices/ayn/loki-zero.md) you would download the `JELOS-AMD64` image.
-    * If you have any questions you can check the [Device Support](../devices/index.md) section to confirm which image you should download for your specific device.
+## Terceiro passo: Ligar seu dispositivo
 
-## Step 2: Flash
-
-* First decompress the image.
-* Then write the image to an SD Card using an imaging tool.
-    * Common imaging tools include [Balena Etcher](https://www.balena.io/etcher/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), and [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).  If you're skilled with the command line, `dd` can also be used.
-
-## Step 3: Boot your device
-
-* Insert your SD Card into your device while its off and then turn it on
-* Note: Some devices may require you to set the boot order so your SD Card is loaded first.  Please see documentation for your specific device to see if this applies to you.
-* JELOS will run through its install process and then reboot your device after its complete.
-* When your device reboots it will load directly into EmulationStation; at this point you are good to go!
+* Insira seu cartão SD em seu dispositivo ainda desligado, apenas quando o cartão for inserido ligue o dispositivo. 
+> Obs: Alguns dispositivos precisam que você modifique a ordem que seu cartão SD é carregado, para que ele seja o primeiro na lista. Por favor verifique a documentação especifica do seu dispositivo para ver se isso é necessario no seu caso.
+* JELOS vai iniciar automaticamente o processo de instalação, e em seguida reiniciara o dispositivo quando estiver completo.
+* Quando o dispositivo reiniciar ele ira iniciar diretamente no EmulationStation. Nesse ponto você já pode prosseguir como achar melhor.
 
 ---
 
-## Additional Notes
+## Observações adicionais
 
-* JELOS operating system is stored on an Ext4 partition that can be read by LINUX but is not natively readable on Windows. Currently it is not possible to access the primary JELOS Ext4 partition on Windows to add games.
-* On devices that support a second sd card, the sd card can be formatted as Ext4, FAT32, or exFAT. JELOS will automatically detect the second SD card on boot and configure the relevant folders for storing roms.
-* On x86 devices JELOS includes an installation tool.  The installation tool can be found in the tools menu, which is one of the systems listed within ES.
+* O sistema operacional JELOS é armazenado em uma partição Ext4, esse tipo de partição pode ser lido pelo LINUX, mas não é legível de forma nativa no Windows; atualmente não é possível acessar a partição primaria do JELOS (Ext4) no Windows para adicionar jogos.
+* Em dispositivos que suportam um segundo cartão SD, esse cartão pode ser formatado como Ext4, FAT32 ou exFAT. JELOS ira detectar automaticamente o segundo cartão durante o boot e criara as pastas essenciais para armazenar as roms.
+* Em dispositivos x86 JELOS inclui uma ferramente de instalação. Essa ferramenta pode ser encontrada do menu `tools`, listado em meio aos sistemas no EmulationStation.
 
-## Next Steps
+## Próximos passos
 
-* [Add Games](/play/add-games)
-* [Set up Networking](/configure/networking)
-* [Themes](/configure/themes)
+* [Adicionar Jogos](/play/add-games)
+* [Configurar rede/internet](/configure/networking)
+* [Temas](/configure/themes)
