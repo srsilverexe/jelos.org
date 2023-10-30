@@ -1,12 +1,16 @@
 site_name: JELOS Wiki
-site_url: https://jelos.org
+docs_dir: 'docs/en'
+site_dir: 'generated'
+site_url: https://jelos.org/
 repo_url: https://github.com/JustEnoughLinuxOS/jelos.org
 repo_name: jelos.org
 copyright: Copyright Creative Commons Attribution-ShareAlike 4.0 International
+
 theme:
   language: en
   name: material
-  logo: _inc/images/logo.png
+  custom_dir: 'overrides/assets'
+  logo: images/logo.png
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -54,13 +58,14 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
 extra_css:
-  - _inc/css/custom.css
+  - assets/css/custom.css
 extra:
   alternate:
     - name: English
       link: /en/
       lang: en
-    - name: Portugues Brasileiro
+
+    - name: Brazilian Portuguese
       link: /pt-BR/
       lang: pt-BR
   social:
@@ -69,8 +74,9 @@ extra:
     - icon: fontawesome/brands/discord 
       link: https://discord.gg/seTxckZjJy
 plugins:
-  - search
-  - glightbox
+  - search:
+      lang: en
+  #- glightbox
 nav:
     - Home: index.md
     - FAQs: faqs.md

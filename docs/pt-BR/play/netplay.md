@@ -1,19 +1,25 @@
-# :material-vector-link: Network Play
+# :material-vector-link: Multiplayer por rede
 
-RetroArch network play for up to 4 players is available across all WIFI enabled devices supported by JELOS.  Before continuing, please make sure that all devices are updated to the same version of the operating system.
+O multiplayer por rede do RetroArch permite que ate 4 jogadores joguem juntos, deis que todos estejam com o WIFI habilitado e estejam em dispositivos suportados pelo JELOS. Andes de prosseguir tenha certeza que todos esses dispositivos estão atualizados na mesma versão do sistema operacional.
 
-## Video Guide
+## Guia em video
 
-> Courtesy of [@RetroGameCorps](https://www.youtube.com/@RetroGameCorps)
+> Cortezia do [@RetroGameCorps](https://www.youtube.com/@RetroGameCorps)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YrUac9TIrWo?si=lXzJ-XUAj54yaIDB" frameborder="0" allowfullscreen></iframe>
 
-## Enabling Network Play
+## Abilitando multiplayer por rede
 
-Before netplay is available, it must be enabled on each participating device.
+Antes que o multiplayer por rede esteja disponivel, é preciso que o mesmo seja disponivel em cada um dos dispositivos participantes.
 
-* Select Games Settings -> Netplay Settings
-  * NetPlay -> Enabled
-  * Index Games
+* Selecione `Game Settings` -> `NetPlay Settings`
+  * `NetPlay` -> `Enabled`
+  * `Index Games`
+
+## Primeira opção: Multiplayer baseado em rede LAN
+
+
+
+
 
 ## Option 1: LAN based Network Play
 Using this feature is simple.  For LAN based play, connect your devices to your WIFI network.  A minimum of one host and one client are required for play.

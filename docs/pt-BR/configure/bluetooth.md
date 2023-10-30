@@ -6,6 +6,12 @@ search:
 
 # :simple-bluetooth: Bluetooth
 
+## Audio bluetooth
+
+### Como parear seu headset
+
+Va no menu "Controller & Bluetooth Settings" no EmulationStation e abilite o Bluetooth
+
 ## Bluetooth Audio
 
 ### How to pair your headset

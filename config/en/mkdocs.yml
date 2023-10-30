@@ -1,0 +1,246 @@
+site_name: JELOS Wiki
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
+site_url: https://jelos.org
+repo_url: https://github.com/JustEnoughLinuxOS/jelos.org
+repo_name: jelos.org
+copyright: Copyright Creative Commons Attribution-ShareAlike 4.0 International
+
+theme:
+  language: en
+  name: material
+  custom_dir: '../../overrides/assets'
+  logo: images/logo.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: art-book
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: art-book-next
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Oxygen
+    code: Oxygen Mono
+  features:
+    - navigation.top
+    #- navigation.instant
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow 
+    - search.suggest
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
+markdown_extensions:
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      toc_depth: 3
+      permalink: ¶
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+extra_css:
+  - assets/css/custom.css
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+
+    - name: Brazilian Portuguese
+      link: /pt-BR/
+      lang: pt-BR
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/JustEnoughLinuxOS/distribution
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/seTxckZjJy
+plugins:
+  - search:
+      lang: en
+  #- glightbox
+nav:
+    - Home: index.md
+    - FAQs: faqs.md
+    - Donations: donations.md
+    - Contribute:
+      - contribute/index.md
+      - Code of Conduct: contribute/code-of-conduct.md
+      - Build: contribute/build.md
+      - Modify: contribute/modify.md
+      - Quirks: contribute/quirks.md
+      - Packages: contribute/packages.md
+    - Play:
+      - Install: play/install.md
+      - Update: play/update.md
+      - Add Games: play/add-games.md
+      - Achievements: play/retro-achievements.md
+      - Controls: play/controls.md
+      - Netplay: play/netplay.md
+    - Configure:
+      - Themes: configure/themes.md
+      - Scraping: configure/scraper.md
+      - Collections: configure/collections.md
+      - Optimizations: configure/optimizations.md
+      - Shaders: configure/shaders.md
+      - Overlays: configure/overlays.md
+      #- Bluetooth: configure/bluetooth.md
+      - Networking: configure/networking.md
+      - Cloud Sync: configure/cloud-sync.md
+      - VPN: configure/vpn.md
+    - Systems:
+      #- systems/index.md
+      - Arcade:
+        #- systems/arcade/index.md
+        - Capcom CPS-1: systems/cps1.md
+        - Capcom CPS-2: systems/cps2.md
+        - Capcom CPS-3: systems/cps3.md
+        - Daphne: systems/daphne.md
+        - Final Burn Neo: systems/fbn.md
+        - MAME: systems/mame.md
+        - Sammy Atomiswave: systems/atomiswave.md
+        - Sega Naomi: systems/naomi.md
+        - SNK Neo Geo: systems/neogeo.md
+      - Consoles:
+        - Amiga CD32: systems/amigacd32.md
+        - Atari 2600: systems/atari2600.md
+        - Atari 5200: systems/atari5200.md
+        - Atari 7800: systems/atari7800.md
+        - Atari Jaguar: systems/atarijaguar.md
+        - ColecoVision: systems/colecovision.md
+        - Fairchild Channel F: systems/channelf.md
+        - Mattel Intellivision: systems/intellivision.md
+        - Magnavox Odyssey 2: systems/odyssey2.md
+        - Microsoft Xbox: systems/xbox.md
+        - NEC PC-Engine / TurboGrafx-16: systems/pcengine.md
+        - NEC SuperGrafx: systems/supergrafx.md
+        - NEC PC-FX: systems/pcfx.md
+        - Nintendo NES / Famicom: systems/nes.md
+        - Nintendo Famicom Disk System (FDS): systems/fds.md
+        - Nintendo Super Nintendo / Super Famicom / Satellaview: systems/snes.md
+        - Nintendo 64: systems/n64.md
+        - Nintendo Gamecube: systems/gamecube.md
+        - Nintendo Wii: systems/wii.md
+        - Nintendo Wii U: systems/wiiu.md
+        - Nintendo Switch: systems/switch.md
+        - Panasonic 3DO: systems/3do.md
+        - Philips Videopac: systems/videopac.md
+        - Sega SG-1000: systems/sg-1000.md
+        - Sega Master System: systems/mastersystem.md
+        - Sega Genesis / Megadrive: systems/genesis.md
+        - Sega CD / Mega CD: systems/genesis.md
+        - Sega 32x: systems/sega32x.md
+        - Sega Saturn: systems/saturn.md
+        - Sega Dreamcast: systems/dreamcast.md
+        - SNK Neo Geo: systems/neogeo.md
+        - SNK Neo Geo CD: systems/neogeocd.md
+        - Sony PlayStation: systems/psx.md 
+        - Sony PlayStation 2: systems/ps2.md 
+        - Sony PlayStation 3: systems/ps3.md
+        - Uzebox: systems/uzebox.md
+        - Vectrex: systems/vectrex.md
+      - Portables:
+        - Arduboy: systems/arduboy.md
+        - Atari Lynx: systems/atarilynx.md
+        - Bandai Wonderswan / Wonderswan Color: systems/wonderswan.md
+        - Mega Duck: systems/megaduck.md
+        - Nintendo Game & Watch: systems/gameandwatch.md
+        - Nintendo Gameboy: systems/gb.md
+        - Nintendo Virtual Boy: systems/virtualboy.md
+        - Nintendo Gameboy Color: systems/gbc.md
+        - Nintendo Gameboy Advance: systems/gba.md
+        - Nintendo Pokémon Mini: systems/pokemini.md
+        - Nintendo DS: systems/nds.md
+        - Nintendo 3DS: systems/3ds.md
+        - Sega Game Gear: systems/gamegear.md
+        - SNK Neo Geo Pocket: systems/ngp.md
+        - Sony PlayStation Portable: systems/psp.md
+        - Sony PlayStation Vita: systems/psvita.md
+        - Watara Supervision: systems/supervision.md
+      - Computers:
+        - Amiga: systems/amiga.md
+        - Amstrad CPC: systems/amstradcpc.md
+        - Atari 800: systems/atari800.md
+        - Atari ST: systems/atarist.md
+        - Commodore 16: systems/c16.md
+        - Commodore 64: systems/c64.md
+        - Commodore 128: systems/c128.md
+        - Commodore PET: systems/pet.md
+        - Commodore VIC-20: systems/vic20.md
+        - MSX: systems/msx.md
+        - MS-DOS: systems/pc.md
+        - NEC PC-88: systems/pc88.md
+        - NEC PC-98: systems/pc98.md
+        - Sharp X1: systems/x1.md
+        - Sharp X68000: systems/x68000.md
+        - Sinclair ZX81: systems/zx81.md
+        - Sinclair ZX Spectrum: systems/zxspectrum.md 
+      - Engines:
+        - Build Engine: systems/build-engine.md
+        - Doom: systems/doom.md
+        - ECWolf: systems/ecwolf.md
+        - EasyRPG: systems/easyrpg.md
+        - Infocom Zmachine: systems/zmachine.md
+        - J2ME: systems/j2me.md
+        - Open Beats of Rage: systems/openbor.md
+        - Pico-8: systems/pico-8.md
+        - SCUMMVM: systems/scummvm.md
+        - TIC-80: systems/tic-80.md
+      - Other:
+        - Moonlight: systems/moonlight.md
+        - Media Player: systems/mplayer.md
+        - Music Player: systems/music.md
+    - Devices: 
+      - devices/index.md
+      - Anbernic:
+        - RG351 [P/M]: devices/anbernic/rg351pm.md
+        - RG353 [P/M/V/VS]: devices/anbernic/rg353pmvvs.md
+        - RG503: devices/anbernic/rg503.md
+        - RG552: devices/anbernic/rg552.md
+        - Win600: devices/anbernic/win600.md
+      - AOKZOE:
+        - A1 Pro: devices/aokzoe/a1-pro.md
+      - Atari:
+        - VCS: devices/atari/vcs.md
+      - AYANEO:
+        - Air / Air Pro: devices/ayaneo/air.md
+        - Air Plus: devices/ayaneo/air-plus.md
+        - AYANEO 2: devices/ayaneo/ayaneo-2.md
+      - AYN:
+        - Loki Zero: devices/ayn/loki-zero.md
+        - Loki Max: devices/ayn/loki-max.md
+      - GPD:
+        - Win 4: devices/gpd/win4.md
+        - Win Max 2: devices/gpd/win-max-2.md
+      - Hardkernel:
+        - Odroid Go Advance: devices/hardkernel/odroid-go-advance.md
+        - Odroid Go Super: devices/hardkernel/odroid-go-super.md
+        - Odroid Go Ultra: devices/hardkernel/odroid-go-ultra.md
+        - Odroid N2/N2+: devices/hardkernel/odroid-n2.md
+      - Indiedroid:
+        - Nova: devices/indiedroid/nova.md
+      - Orange Pi:
+        - Orange Pi 5: devices/orange-pi/orange-pi-5.md
+      - Powkiddy:
+        - RGB10 Max 3 Pro: devices/powkiddy/rgb10-max-3-pro.md
+        - RGB30: devices/powkiddy/rgb30.md
+        - RK2023: devices/powkiddy/rk2023.md
+        - x55: devices/powkiddy/x55.md

@@ -12,7 +12,7 @@ Se o seu dispositivo tiver acesso à internet, você pode atualizar o JELOS dire
 
 !!! Obs: "Você também pode ver o log de modificações do último lançamento, para verificar selecione `Change log` antes de atualizar."
 
-## segunda opção: Atualização manual
+## Segunda opção: Atualização manual
 
 Se o seu dispositivo não tiver acesso à internet, você ainda pode atualizá-lo de forma manual
 
